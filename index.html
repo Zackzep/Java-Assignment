@@ -4,10 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizza Picker</title>
+    <link href="Style\style.css"rel="stylesheet">
 </head>
-<body>
+<body background="images\pizzabackground.png">
     
-    <script src="Script/js.js"></script>
+    <div id="navigation">
+        <a href="index.html">Home</a>
+        <a href="https://zackzep.github.io/Portfolio/">Portfolio</a>
+        <a href="https://zackzep.github.io/PersonalBlog/">Blog</a>
+        <a href="https://zackzep.github.io/PersonalBlog/aboutme.html">About Me</a>
+        <a href="https://www.linkedin.com/in/zachary-zepezauer-95162b23a/">Contact</a>
+        <a href="progress.html">Updates</a>            
+    </div>
+
+    <h1><u>Zack's Pizza Shop</u></h1>
+    
+    <div id="MainContainer">
+        <div id="PageSections">
+            <div id="Order">
+                <h3>Drinks</h3>
+                <input type="radio" name="drinks" class="drinks" value="5.00"><label>Beer</label><br>
+                <input type="radio" name="drinks" class="drinks" value="0.00"><label>Water</label><br>
+                <input type="radio" name="drinks" class="drinks" value="2.00"><label>Soda</label><br>
+                <input type="radio" name="drinks" class="drinks" value="3.00"><label>Juice</label><br>
+                <input type="radio" name="drinks" class="drinks" value="3.50"><label>Milk</label><br>
+                <input type="radio" name="drinks" class="drinks" value="2.50"><label>Coffee</label><br>
+                <h3>Pizza Size</h3>
+                <input type="radio" name="pizzaSize" class="pizzaSize" value= "3.00"><label>Slice</label><br>
+                <input type="radio" name="pizzaSize" class="pizzaSize" value="12.00"><label>Small</label><br>
+                <input type="radio" name="pizzaSize" class="pizzaSize" value="18.00"><label>Medium</label><br>
+                <input type="radio" name="pizzaSize" class="pizzaSize" value="22.00"><label>Large</label><br>
+                <input type="radio" name="pizzaSize" class="pizzaSize" value="28.00"><label>Extra Large</label><br>
+                <h3>Meat Toppings</h3>
+                <input type="checkbox" name="meatToppings" id="" class="meatToppings" value="1.50"><label>Pepperoni</label><br>
+                <input type="checkbox" name="meatToppings" id="" class="meatToppings" value="1.50"><label>Sausage</label><br>
+                <input type="checkbox" name="meatToppings" id="" class="meatToppings" value="1.50"><label>Canadian Bacon</label><br>
+                <input type="checkbox" name="meatToppings" id="" class="meatToppings" value="2.00"><label>Chicken</label><br>
+                <input type="checkbox" name="meatToppings" id="" class="meatToppings" value="4.00"><label>Proscuitto</label><br>
+                <input type="checkbox" name="meatToppings" id="" class="meatToppings" value="1.50"><label>Bacon</label><br>
+                <h3>Veggie Toppings</h3>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="1.50"><label>Mushrooms</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="1.50"><label>Spinach</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="2.00"><label>Tomatoes</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="1.50"><label>Peppers</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="2.50"><label>Pepperoncini</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="3.00"><label>Sundried Tomatoes</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="2.00"><label>Basil</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="1.50"><label>Onion</label><br>
+                <input type="checkbox" name="vegToppings" id="" class="vegToppings" value="2.50"><label>Olives</label><br>
+                <h3>Crust Type</h3>
+                <select id="crust">
+                    <option value="NY Style">NY Style</option>
+                    <option value="Pan">Pan</option>
+                    <option value="Detroit">Detroit</option>
+                    <option value="Stuffed Crust">Stuffed</option>
+                    <option value="Hand Tossed">Hand Tossed</option>
+                    <option value="Thin Crust">Thin</option>
+                </select><br>
+            </div>
+        </div>
+        <div id="PageSections">
+            <div id="CustomerInfo">
+                <h3>Name</h3>
+                <input type="text" id="userInput"><br>
+                <h3>Street Address</h3>
+                <input type="text" id="userInput"><br>
+                <h3>City</h3>
+                <input type="text" id="userInput"><br>
+                <h3>State</h3>
+                <input type="text" id="userInput"><br>
+                <h3>Zip Code</h3>
+                <input type="text" id="userInput"><br>
+                <h3>Phone Number</h3>
+                <input type="text" id="userInput"><br>
+                <h3>Special Notes</h3>
+                <textarea id="buyernotes"></textarea><br>
+                <input id="btnTest" type="button" value="Submit Order">
+            </div>
+        </div>
+        <div id="PageSections">
+            <div id="OrderPrint">
+                <div id="PrintArea">
+                    <h3>Order Summary</h3>
+                    <div id="PrintBox"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

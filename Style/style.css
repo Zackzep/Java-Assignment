@@ -1,0 +1,67 @@
+#MainContainer{
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(3, auto);
+}
+
+#Order{
+    background-color: #DB6208;
+    padding: 30px;
+    border: 3px solid #5C391F;
+    box-shadow: 10px 10px 10px 10px #5C391F;
+}
+
+#CustomerInfo{
+    background-color: #DB6208;
+    padding: 30px;
+    height: 828px;
+    border: 3px solid #5C391F;
+    box-shadow: 10px 10px 10px 10px #5C391F;
+}
+
+#OrderPrint{
+    background-color: #DB6208;
+    height: 600px;
+    height: 828px;
+    padding: 30px;
+    text-align: center;
+    border: 3px solid #5C391F;
+    box-shadow: 10px 10px 10px 10px #5C391F;
+}
+
+#PageSections{
+    margin: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 400%;
+    color: black;
+}
+
+#navigation {
+    background-color: #A84D07;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    font-size: 20px;
+    border: 5px solid #5C391F;
+}
+
+a:hover{
+    background-color: #DB6208;
+    transition: 1s;
+}
+
+a {
+    text-align: center;
+    border: 0;
+    height: 25px;
+    color: white;
+}
+
+#PrintBox{
+    background-color: white;
+    height: 700px;
+    box-shadow: inset 1px 1px 1px 1px black;
+}
+
