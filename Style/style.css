@@ -81,7 +81,7 @@ a {
 
 @media (max-width: 1024px) {
     #MainContainer {
-        grid-template-columns: repeat(2, 1fr); /* Switch to two-column layout */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #navigation {
@@ -92,7 +92,7 @@ a {
 
 @media (max-width: 768px) {
     #MainContainer {
-        grid-template-columns: 1fr; /* Single-column layout */
+        grid-template-columns: 1fr;
     }
 
     h1 {
@@ -130,6 +130,6 @@ a {
     }
 
     #PrintBox {
-        height: 400px; /* Reduce height for smaller screens */
+        height: 400px;
     }
 }
