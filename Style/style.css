@@ -42,9 +42,23 @@ h1{
 #navigation {
     background-color: #A84D07;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(4, auto);
     font-size: 20px;
     border: 5px solid #5C391F;
+    align-items: center;
+    justify-items: center;
+}
+
+#navigation a {
+    text-align: center;
+    color: white;
+    text-decoration: none; /* Removes underline */
+    display: block; /* Ensures links fill the grid cell */
+    width: 100%; /* Makes the link span the full column width */
+    height: 100%; /* Makes the link span the full column height */
+    padding: 10px 0; /* Adds some spacing inside the links */
+    box-sizing: border-box; /* Ensures padding doesn't break the layout */
+    transition: background-color 0.3s; /* Smooth hover effect */
 }
 
 a:hover{
